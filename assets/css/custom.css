@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* global */
+
+.lightBlue{
+    color: rgb(33, 65, 135);
+}
+
+.italic{
+    font-style: italic;
+    color: rgb(33, 65, 135)
+}
+
+.container{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    padding: 10px 0 10px 0;
+    background: white;
+}
+
+header h2{
+    font-size: 20px;
+}
+
+/* showcase */
+.showcase{
+    height: 100vh;
+}
+
+.showcase .container{
+    display: flex;
+}
+
+.showcase .intro{
+    width: 50%;
+    padding: 20px 0 20px 0;
+}
+
+.showcase .intro h1{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.showcase .intro p{
+    margin-top: 30px;
+}
+
+.showcase .intro .see{
+    padding: 15px 30px 15px 30px;
+    font-size: 12px;
+    border: rgb(33, 65, 135) 2px solid;
+    background: rgb(33, 65, 135);
+    margin-top: 25px;
+    color: #fff;
+    transition-property: background, color;
+    transition-duration: .5s;
+    border-radius: 30px;
+}
+
+.showcase .intro .see:hover{
+    background: none;
+    color: rgb(33, 65, 135);
+}
+
+.showcase .intro .send{
+    padding: 15px 30px 15px 30px;
+    font-size: 12px;
+    background: none;
+    border: rgb(33, 65, 135) 2px solid;
+    color:  rgb(33, 65, 135);
+    transition-property: background, color;
+    transition-duration: .5s;
+    border-radius: 30px;
+}
+
+.showcase .intro .send:hover{
+    background: rgb(33, 65, 135);
+    color: #fff;
+}
+
+.showcase .pic{
+    width: 50%;
+    margin-left: 10px;
+    padding: 20px 0 20px 0;
+}
+
+.showcase .pic img{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.showcase i{
+    position: fixed;
+    margin-left: 20px;
+    color: rgb(33, 65, 135);
+}
+
+/* provide */
+
+.provide h2{
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.provide1{
+    padding: 30px 0 30px 0;
+}
+
+.provide1 .container{
+    display: flex;
+}
+
+.provide1 .img{
+    width: 50%;
+}
+
+.provide1 .desc{
+    width: 50%;
+}
+
+.provide1 .desc h3{
+    font-size: 20px;
+}
+
+.provide1 .desc p{
+    font-size: 12px;
+}
+
+.provide1 .img img{
+    width: 100%;
+}
+
+/* second Section */
+
+.provide1 .square{
+    width: 400px;
+    height: 200px;
+    border: rgb(33, 65, 135) 2px solid;
+    margin: auto;
+    animation: width 3s infinite;
+}
+
+@keyframes width {
+    0%{
+        width: 400px;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        width: 400px;
+    }
+}
+
+.provide1 .small{
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+
+.provide1 .small .innerSquare{
+    width: 100px;
+    position: relative;
+    height: 100px;
+    background: rgb(33, 65, 135);
+    animation: round 3s infinite;
+}
+
+@keyframes round {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        top:0px;
+        left: 50%;
+        transform: rotateZ(180deg);
+        border-radius: 50%;
+        background: rgb(130, 220, 66);
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+        background: rgb(208, 153, 51);
+    }
+    75%{
+        top: 50%;
+        left: 0%;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.provide1 .desc .profDes{
+    background: rgb(33, 65, 135);
+    width: 400px;
+    margin-top: 30px;
+    height: 200px;
+    transform: rotateZ(3deg);
+}
+
+.provide1 .desc .profDes img{
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(-3deg);
+    box-shadow: 0 0 10px #000;
+}
+
+* services */
+
+.services{
+    padding: 10px 0 10px 0;
+}
+
+.services h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.services-three{
+    padding: 30px 0 30px 0;
+}
+
+.services-three .box{
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    background: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+.services-three .box i{
+    font-size: 50px;
+    color: rgb(33, 65, 135);
+}
+
+.services-three .box h3{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.services-three .box p{
+    font-size: 12px;
+}
+
+/* projects */
+
+.projects{
+    padding: 50px 0 50px 0;
+}
+
+.projects h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects .project{
+    width: 90%;
+    background: rgb(245, 245, 245);
+    margin: 20px auto 20px auto;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgb(33, 65, 135);
+}
+
+.projects .project img{
+    height: 30vh;
+}
+
+.projects .project p{
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.projects .project p a{
+    color: rgb(33, 65, 135);
+}
+
+/* why */
+
+.why{
+    padding: 10px 0 10px 0;
+}
+
+.why h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* three */
+
+.three{
+    padding: 30px 0 30px 0;
+}
+
+.three .box{
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.three .box i{
+    font-size: 50px;
+    color: rgb(33, 65, 135);
+}
+
+.three .box h3{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.three .box p{
+    font-size: 12px;
+}
+
+/* footer */
+
+footer{
+    padding: 20px 0 10px 0;
+    background: rgb(33, 65, 135);
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
